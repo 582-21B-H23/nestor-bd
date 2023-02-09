@@ -1,0 +1,40 @@
+# Besoins en données de l'application Nestor
+
+## Liste des entités (acteurs, ou objets, ou choses)
+a) Utilisateur
+b) Contact
+c) Telephone
+
+### Décrire les entités (énumérer leurs caratéristiques, ou propriétés, ou attributs)
+a) Utilisateur 
+    1) Identifiant : nombre incrémenté, unique
+    2) Nom complet : chaîne (50), obligatoire
+    2) Adresse de courriel : chaîne (100), obligatoire, unique
+    3) Mot de passe : chaîne (128), obligatoire
+
+b) Contact
+    1) Identifiant : nombre incrémenté, unique
+    2) Nom de famille : chaine (25), optionnel
+    3) Prénom : chaine (25), optionnel 
+    4) Identifiant de l'utilisateur
+
+c) Telephone 
+    1) Identifiant : nombre incrémenté, unique
+    2) Numéro : chaîne (18), obligatoire
+    3) Poste : chaîne (6), optionnel
+    4) Type : énumération ('Domicile', 'Bureau', 'Cellulaire', 'Autre'), 
+        obligatoire, valeur par défaut : 'Cellulaire'
+    5) Identifiant du contact
+
+
+
+
+
+
+
+
+
+
+
+
+

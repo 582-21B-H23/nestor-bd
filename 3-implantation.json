@@ -1,0 +1,27 @@
+{
+    "utilisateurs": {
+        "u000001": {
+            "nom_complet": "Jean Racine",
+            "courriel": "jracine@gmail.com",
+            "mdp": "sdjfhshkdfghist4795rtw47grt9w34ytwrbtg38h4t893t83",
+            "contacts": [
+                {
+                    "nom": "Julie",
+                    "prenom": "",
+                    "telephones": [
+                        {
+                            "numero": "987457485416", 
+                            "poste": "2515",
+                            "type": "Bureau"
+                        },
+                        {
+                            "numero": "51485452", 
+                            "poste": "",
+                            "type": "Domicile"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
