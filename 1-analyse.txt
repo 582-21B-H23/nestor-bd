@@ -9,8 +9,9 @@ c) Telephone
 a) Utilisateur 
     1) Identifiant : nombre incrémenté, unique
     2) Nom complet : chaîne (50), obligatoire
-    2) Adresse de courriel : chaîne (100), obligatoire, unique
-    3) Mot de passe : chaîne (128), obligatoire
+    3) Adresse de courriel : chaîne (200), obligatoire, unique
+    4) Mot de passe : chaîne (128), obligatoire
+    5) Date de création du compte : Date, obligatoire
 
 b) Contact
     1) Identifiant : nombre incrémenté, unique
@@ -20,8 +21,8 @@ b) Contact
 
 c) Telephone 
     1) Identifiant : nombre incrémenté, unique
-    2) Numéro : chaîne (18), obligatoire
-    3) Poste : chaîne (6), optionnel
+    2) Numéro : chaîne (20), obligatoire
+    3) Poste : chaîne (10), optionnel
     4) Type : énumération ('Domicile', 'Bureau', 'Cellulaire', 'Autre'), 
         obligatoire, valeur par défaut : 'Cellulaire'
     5) Identifiant du contact
