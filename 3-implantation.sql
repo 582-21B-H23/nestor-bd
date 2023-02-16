@@ -5,6 +5,12 @@
 -- SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 -- SET FOREIGN_KEY_CHECKS=0;
 
+-- BD 'nestor'
+DROP DATABASE IF EXISTS nestor;
+CREATE DATABASE nestor  CHARACTER SET utf8mb4 COLLATE=utf8mb4_general_ci;
+USE nestor;
+
+
 -- ---
 -- Table 'utilisateur'
 -- 
