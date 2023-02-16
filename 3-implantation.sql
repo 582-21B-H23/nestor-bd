@@ -18,7 +18,8 @@ CREATE TABLE `utilisateur` (
   `courriel` VARCHAR(200) NOT NULL,
   `mdp` CHAR(128) NOT NULL COMMENT 'Mot de passe encrypté avec SHA512',
   `dcc` DATE NOT NULL COMMENT 'Date à laquelle le compte a été ouvert.',
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
+  UNIQUE KEY (`courriel`)
 );
 
 -- ---
@@ -49,7 +50,8 @@ CREATE TABLE `telephone` (
   `poste` VARCHAR(10) NULL DEFAULT NULL,
   `type` ENUM('Domicile', 'Bureau', 'Cellulaire', 'Autre') NOT NULL DEFAULT 'Cellulaire',
   `id_contact` INT NOT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
+  UNIQUE KEY (`numero`, `type`, `id_contact`)
 );
 
 -- ---
