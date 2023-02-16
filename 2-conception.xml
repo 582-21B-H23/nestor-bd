@@ -59,16 +59,16 @@
 <part>id</part>
 </key>
 </table>
-<table x="426" y="133" name="contact">
+<table x="399" y="138" name="contact">
 <row name="id" null="0" autoincrement="1">
 <datatype>INT</datatype>
 </row>
 <row name="prenom" null="1" autoincrement="0">
 <datatype>VARCHAR(25)</datatype>
-</row>
+<default>NULL</default></row>
 <row name="nom" null="1" autoincrement="0">
-<datatype>VARCHAR</datatype>
-</row>
+<datatype>VARCHAR(25)</datatype>
+<default>NULL</default></row>
 <row name="id_utilisateur" null="0" autoincrement="0">
 <datatype>MEDIUMINT</datatype>
 <relation table="utilisateur" row="id" />
@@ -77,7 +77,7 @@
 <part>id</part>
 </key>
 </table>
-<table x="700" y="204" name="telephone">
+<table x="656" y="205" name="telephone">
 <row name="id" null="0" autoincrement="1">
 <datatype>INT</datatype>
 </row>
